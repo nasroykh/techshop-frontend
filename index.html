@@ -10,25 +10,28 @@
 	</head>
 	<body>
 
+		<div class="top-header">
+			<span>
+				<img src="images/top-website-logo.svg" alt="">
+			</span>
+			<span>
+				<p><em>Mon-Thu:</em> 9:00 AM - 5:30 PM</p> 
+				<img src="images/arrow-down.svg" alt=""/>
+			</span>
+			<span><a href="">Contact Us</a></span>
+		</div>
+
 		<header>
-			<div class="top-header">
-				<span>
-					<img src="images/top-website-logo.svg" alt="">
-				</span>
-				<span>
-					<p><em>Mon-Thu:</em> 9:00 AM - 5:30 PM</p> 
-					<img src="images/arrow-down.svg" alt=""/>
-				</span>
-				<span><a href="">Contact Us</a></span>
-			</div>
 			<div class="bottom-header"> 
 				<button><img src="images/menu-icon.svg" alt=""></button>
 				<form>
 					<img src="images/search-icon.svg" alt="">
 					<input type="text" placeholder="Search Here" id="">
 				</form>
-				<button><img src="images/cart-icon.svg" alt=""></button>
-				<button><img src="images/user-icon.svg" alt=""></button>
+				<div>
+					<button><img src="images/cart-icon.svg" alt=""></button>
+					<button><img src="images/user-icon.svg" alt=""></button>
+				</div>
 			</div>
 		</header>
 		
@@ -43,7 +46,7 @@
 					<h1>New Products</h1>
 					<a href="">See All New Products</a>
 				</div>
-				<ul>
+				<ul class="products-list">
 					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
@@ -200,18 +203,18 @@
 					</li>
 				</ul>
 				<div>
-					<img src="images/ad-icon.svg" alt="">
-					<p>own it now, up to 6 months interest free</p>
+					<img src="images/primary 1 (1).svg" alt="">
+					<p><b>own</b> it now, up to 6 months interest free</p>
 					<a href="#">learn more</a>
 				</div>
 			</section>
 
 			<section class="section2">
-				<div>
+				<div class="category-header">
 					<h1>Custom Builds</h1>
 					<a href="">See All Products</a>
 				</div>
-				<ul>
+				<ul class="products-list">
 					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
@@ -262,11 +265,11 @@
 			</section>
 
 			<section class="section3">
-				<div>
+				<div class="category-header">
 					<h1>MSI Laptops</h1>
 					<a href="">See All Products</a>
 				</div>
-				<div>
+				<div class="category-tab">
 					<ul>
 						<li><button>MSI GS Series</button></li>
 						<li><button>MSI GT Series</button></li>
@@ -274,8 +277,8 @@
 						<li><button>MSI GE Series</button></li>
 					</ul>
 				</div>
-				<div>
-					<div>
+				<ul class="products-list">
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -296,8 +299,8 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-					<div>
+					</li>
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -318,18 +321,63 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-				</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/valid-icon.svg" alt="">
+							in stock
+						</div>
+						<img src="images/laptop-2.png" alt="">
+						<div>
+							<span>
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-grey.svg" alt="">
+							</span>
+							<span>
+								Reviews (4)
+							</span>
+						</div>
+						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+						<p>$499.00</p>
+						<p>$499.00</p>
+					</li>
+					<li>
+						<div>
+							<img src="images/valid-icon.svg" alt="">
+							in stock
+						</div>
+						<img src="images/laptop-2.png" alt="">
+						<div>
+							<span>
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-gold.svg" alt="">
+								<img src="images/star-grey.svg" alt="">
+							</span>
+							<span>
+								Reviews (4)
+							</span>
+						</div>
+						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+						<p>$499.00</p>
+						<p>$499.00</p>
+					</li>
+					
+				</ul>
 					
 
 			</section>
 
 			<section class="section4">
-				<div>
+				<div class="category-header">
 					<h1>Desktops</h1>
 					<a href="">See All Products</a>
 				</div>
-				<div>
+				<div class="category-tab">
 					<ul>
 						<li><button>MSI Infinute Series</button></li>
 						<li><button>MSI Triden</button></li>
@@ -337,8 +385,8 @@
 						<li><button>MSI Nightblade</button></li>
 					</ul>
 				</div>
-				<div>
-					<div>
+				<ul class="products-list">
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -359,8 +407,8 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-					<div>
+					</li>
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -381,19 +429,19 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-				</div>
+					</li>
+				</ul>
 					
 
 			</section>
 
 			<section class="section5">
-				<div>
+				<div class="category-header">
 					<h1>Desktops</h1>
 					<a href="">See All Products</a>
 				</div>
-				<div>
-					<div>
+				<ul class="products-list">
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -414,8 +462,8 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-					<div>
+					</li>
+					<li>
 						<div>
 							<img src="images/valid-icon.svg" alt="">
 							in stock
@@ -436,8 +484,8 @@
 						<p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
 						<p>$499.00</p>
 						<p>$499.00</p>
-					</div>
-				</div>
+					</li>
+				</ul>
 					
 
 			</section>
@@ -445,12 +493,12 @@
 			<section class="section6">
 				<div>
 					<img src="images/sponsor-1.svg" alt="">
-					<img src="images/sponsor-2.svg" alt="">
-					<img src="images/sponsor-3.svg" alt="">
-					<img src="images/sponsor-4.svg" alt="">
 					<img src="images/sponsor-5.svg" alt="">
+					<img src="images/sponsor-2.svg" alt="">
 					<img src="images/sponsor-6.svg" alt="">
+					<img src="images/sponsor-3.svg" alt="">
 					<img src="images/sponsor-7.svg" alt="">
+					<img src="images/sponsor-4.svg" alt="">
 				</div>
 			</section>
 
@@ -483,13 +531,13 @@
 				</div>
 				<div>
 					<img src="images/account-icon.svg" alt="">
-					<h2>Product Support</h2>
-					<p>Up to 3 years on-site warranty available for your peace of mind.</p>
+					<h2>Personal Account</h2>
+					<p>With big discounts, free delivery and a dedicated support specialist.</p>
 				</div>
 				<div>
 					<img src="images/pricetag-icon.svg" alt="">
-					<h2>Product Support</h2>
-					<p>Up to 3 years on-site warranty available for your peace of mind.</p>
+					<h2>Amazing Savings</h2>
+					<p>Up to 70% off new Products, you can be sure of the best price.</p>
 				</div>
 			</section>
 		</main>
@@ -502,31 +550,68 @@
 				<button type="submit">Subscribe</button>
 			</form>
 			<div>
-				<button>Information</button>
-			</div>
-			<div>
-				<button>PC Parts</button>
-				<ul>
-					<li><a href="">CPUS</a></li>
-					<li><a href="">Add On Cards</a></li>
-					<li><a href="">Hard Drives (Internal)</a></li>
-					<li><a href="">Graphic Cards</a></li>
-					<li><a href="">Keyboards / Mice</a></li>
-					<li><a href="">Cases / Power Supplies / Cooling</a></li>
-					<li><a href="">RAM (Memory)</a></li>
-					<li><a href="">Software</a></li>
-					<li><a href="">Speakers / Headsets</a></li>
-					<li><a href="">Motherboards</a></li>
-				</ul>
-			</div>
-			<div>
-				<button>Desktop PC's</button>
-			</div>
-			<div>
-				<button>Laptops</button>
-			</div>
-			<div>
-				<button>Address</button>
+				<div>
+					<button>
+						<span>
+							Information
+						</span>
+						<span>
+							<img src="images/arrow-down.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div>
+					<button>
+						<span>
+							PC Parts
+						</span>
+						<span>
+							<img src="images/arrow-down.svg" alt="">
+						</span>
+					</button>
+					<ul>
+						<li><a href="">CPUS</a></li>
+						<li><a href="">Add On Cards</a></li>
+						<li><a href="">Hard Drives (Internal)</a></li>
+						<li><a href="">Graphic Cards</a></li>
+						<li><a href="">Keyboards / Mice</a></li>
+						<li><a href="">Cases / Power Supplies / Cooling</a></li>
+						<li><a href="">RAM (Memory)</a></li>
+						<li><a href="">Software</a></li>
+						<li><a href="">Speakers / Headsets</a></li>
+						<li><a href="">Motherboards</a></li>
+					</ul>
+				</div>
+				<div>
+					<button>
+						<span>
+							Desktop PC's
+						</span>
+						<span>
+							<img src="images/arrow-down.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div>
+					<button>
+						<span>
+							Laptops
+						</span>
+						<span>
+							<img src="images/arrow-down.svg" alt="">
+						</span>
+					</button>
+				</div>
+				<div>
+					<button>
+						<span>
+							Address
+						</span>
+						<span>
+							<img src="images/arrow-down.svg" alt="">
+						</span>
+					</button>
+				</div>
 			</div>
 			<div>
 				<ul>
