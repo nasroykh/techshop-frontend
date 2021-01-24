@@ -57,6 +57,7 @@ button {
 		font-size: 0.6875rem;
 		color: #fff;
 		font-weight: 600;
+		vertical-align: middle;
 	}
 
 	em {
@@ -80,7 +81,7 @@ button {
 		}
 	}
 
-	& > span:nth-child(3) {
+	& > span:nth-child(3) > a {
 		text-decoration: underline;
 		text-underline-offset: 0.2em;
 	}
@@ -102,8 +103,8 @@ header {
 		background-color: $primaryColor;
 
 		& > button {
-			padding: 0 0.5em;
-			margin-right: 1em;
+			padding: 0 0.3em;
+			margin-right: 0.3em;
 		}
 
 		& > form {
@@ -130,8 +131,10 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			column-gap: .5em;
-			margin-left: 1em;
+			margin-left: 0.3em;
+			& > button {
+				padding: 0 0.3em;
+			}
 		}
 	}
 }
@@ -142,7 +145,7 @@ header {
 	flex-direction: column;
 	text-align: center;
 	margin-bottom: 2em;
-	padding: 1em 0;
+	padding: 2em 0;
 	row-gap: 1.5em;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -164,8 +167,9 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 1em;
 		& > li {
+			margin-right: 1em;
+			margin-bottom: .5em;
 			& > button {
 				font-size: 0.875rem;
 				font-weight: 600;
@@ -173,17 +177,17 @@ header {
 			}
 		}
 		& > li:first-of-type > button {
-			text-decoration: underline 0.2em $primaryColor;
-			text-underline-offset: 0.2em;
 			color: #000;
+			border-bottom: 0.2em solid $primaryColor ;
 		}
 	}
 }
 
 .products-list {
-	margin: 0 -1em 2em 1em;
+	margin: 0 -1em 2em 0em;
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding-bottom: 1em;
@@ -192,7 +196,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-right: 2em;
+		margin-right: 4em;
 		& > div:first-of-type {
 			color: #78a962;
 			font-size: 0.625rem;
@@ -200,8 +204,8 @@ header {
 
 		& > img {
 			align-self: center;
-			margin: 0 5em;
 			padding-top: 0.5em;
+			max-width: 9em;
 		}
 
 		& > div:last-of-type {
@@ -220,7 +224,6 @@ header {
 		& > p:nth-of-type(1) {
 			font-size: 0.6875rem;
 			margin: 0.5em 0;
-			width: 75%;
 		}
 
 		& > p:nth-of-type(2) {
@@ -244,9 +247,14 @@ main {
 		& > div:nth-child(1) {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: center;
 			position: relative;
-			margin-bottom: 1em;
+			width: fit-content;
+			margin: 0 auto 1em;
+
+			& > a {
+			
+			}
 
 			& > button {
 				position: absolute;
@@ -274,7 +282,7 @@ main {
 			& > a {
 				color: #000;
 				text-decoration: underline;
-				font-size: .625rem;
+				font-size: 0.625rem;
 			}
 		}
 
@@ -309,30 +317,30 @@ main {
 
 	.section2 {
 		.category-header {
-			background-image: url("/images/category-banner-image-1.png");
+			background-image: url("/images/category-banner-image-1-mobile.png");
 		}
 	}
 
 	.section3 {
 		.category-header {
-			background-image: url("/images/category-banner-image-2.png");
+			background-image: url("/images/category-banner-image-2-mobile.png");
 		}
 	}
 
 	.section4 {
 		.category-header {
-			background-image: url("/images/category-banner-image-3.png");
+			background-image: url("/images/category-banner-image-3-mobile.png");
 		}
 	}
 
 	.section5 {
 		.category-header {
-			background-image: url("/images/category-banner-image-4.png");
+			background-image: url("/images/category-banner-image-4-mobile.png");
 		}
 	}
 
 	.section6 {
-		& > div{
+		& > div {
 			display: flex;
 			align-items: center;
 			justify-content: space-around;
@@ -340,15 +348,12 @@ main {
 			margin: 2em;
 			column-gap: 1em;
 			row-gap: 2em;
-
-			& > img {
-			}
 		}
 	}
 
 	.section7 {
 		& > div {
-			background-color: #F5F9FF;
+			background-color: #f5f9ff;
 			padding: 1em;
 			margin-bottom: 2em;
 			& > figure {
@@ -360,7 +365,7 @@ main {
 				& > span {
 					font-size: 3.25rem;
 					font-style: italic;
-					letter-spacing: .05em;
+					letter-spacing: 0.05em;
 					align-self: flex-start;
 				}
 
@@ -368,7 +373,7 @@ main {
 					font-size: 0.8125rem;
 					padding: 0 1.5em;
 					line-height: 1.5;
-				} 
+				}
 
 				& > figcaption {
 					grid-column: 1 / -1;
@@ -385,7 +390,7 @@ main {
 				& > button {
 					border: 2px solid $primaryColor;
 					border-radius: 100em;
-					padding: .7em 2em;
+					padding: 0.7em 2em;
 					color: $primaryColor;
 					font-weight: 700;
 				}
@@ -394,12 +399,12 @@ main {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
-					column-gap: .5em;
 					& > span {
-						background-color: #CCCCCC;
+						background-color: #cccccc;
 						height: 0.5625em;
 						width: 0.5625em;
 						border-radius: 100em;
+						margin-left: .5em;
 					}
 
 					& > span:first-of-type {
@@ -411,7 +416,6 @@ main {
 	}
 
 	.section8 {
-
 		& > div {
 			display: flex;
 			flex-direction: column;
@@ -422,17 +426,17 @@ main {
 				background-color: $primaryColor;
 				border-radius: 100em;
 				padding: 1em;
-			} 
-			
+			}
+
 			& > h2 {
-				margin: .5em 0;
-			} 
-			
+				margin: 0.5em 0;
+			}
+
 			& > p {
 				font-size: 0.75rem;
-				color: #4D4D4D;
+				color: #4d4d4d;
 				width: 75%;
-			} 
+			}
 		}
 	}
 }
@@ -451,7 +455,7 @@ footer {
 
 	& > p {
 		text-align: center;
-		margin: .5em 0;
+		margin: 0.5em 0;
 		font-weight: 300;
 		font-size: 0.75rem;
 	}
@@ -464,7 +468,7 @@ footer {
 
 		& > input {
 			border: 2px solid #fff;
-			padding: .7em 1em;
+			padding: 0.7em 1em;
 			width: 65%;
 			color: #fff;
 		}
@@ -473,12 +477,11 @@ footer {
 			color: #fff;
 			background-color: $primaryColor;
 			border-radius: 100em;
-			padding: .7em 0;
+			padding: 0.7em 0;
 			width: 30%;
 			max-width: 200px;
 			font-weight: 600;
 		}
-
 	}
 
 	& > div:first-of-type {
@@ -491,25 +494,25 @@ footer {
 				color: #fff;
 				padding: 1em 0;
 				font-weight: 600;
-				margin-bottom: .5em;
-				border-bottom: 2px solid #4D4D4D;
+				margin-bottom: 0.5em;
+				border-bottom: 2px solid #4d4d4d;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 			}
 
 			& > ul {
-				padding: 0 .5em;
+				padding: 0 0.5em;
 				font-weight: 300;
 
 				& > li {
 					margin-bottom: 1.2em;
 					& > a {
-						padding: .2em 0;
+						padding: 0.2em 0;
 					}
 				}
 
-				& > li > a:hover, 
+				& > li > a:hover,
 				& > li > a:focus {
 					text-decoration: underline;
 				}
@@ -550,16 +553,25 @@ footer {
 		justify-content: center;
 		column-gap: 1em;
 	}
+}
 
+@media (max-width: 319px) {
+	.top-header {
+		padding: 0 0.5em;
+
+		p,
+		a {
+			font-size: 0.55rem;
+		}
+	}
 }
 
 @media (min-width: 768px) {
-
 	section {
 		margin-bottom: 2em;
 	}
 
-	.top-header > span:nth-of-type(2){
+	.top-header > span:nth-of-type(2) {
 		margin-right: auto;
 		margin-left: 2em;
 	}
@@ -567,10 +579,10 @@ footer {
 	main > .section1 > .ad {
 		flex-direction: row;
 		justify-content: center;
-		
+
 		& > img {
-			border-right: 2px solid #00AEB8;
-			padding-right: .5em;
+			border-right: 2px solid #00aeb8;
+			padding-right: 0.5em;
 		}
 
 		& > p {
@@ -578,14 +590,50 @@ footer {
 		}
 	}
 
-	.section2, .section5 {
-		display: grid;
-		grid-template-columns: 25% 75%;
+	main {
+		.section2 {
+			.category-header {
+				background-image: url("/images/category-banner-image-1-large.png");
+				height: 350px;
+			}
+		}
+
+		.section3 {
+			.category-header {
+				background-image: url("/images/category-banner-image-2-large.png");
+				height: 350px;
+			}
+		}
+
+		.section4 {
+			.category-header {
+				background-image: url("/images/category-banner-image-3-large.png");
+				height: 350px;
+			}
+		}
+
+		.section5 {
+			.category-header {
+				background-image: url("/images/category-banner-image-4-large.png");
+				height: 350px;
+			}
+		}
 	}
 
-	.section3, .section4 {
+	.products-list {
+		padding: 0 1em;
+	}
+
+	.section2,
+	.section3,
+	.section4,
+	.section5 {
 		display: grid;
-		grid-template-columns: 25% 75%;
+		grid-template-columns: minmax(auto, 230px) auto;
+	}
+
+	.section3,
+	.section4 {
 		grid-template-rows: auto auto;
 		& > .category-tab {
 			grid-column: 1 / -1;
@@ -609,8 +657,6 @@ footer {
 		}
 	}
 
-
-
 	.section8 {
 		display: flex;
 		align-items: center;
@@ -624,5 +670,4 @@ footer {
 			padding: 0 2em;
 		}
 	}
-
 }
